@@ -1,0 +1,36 @@
+
+.background-img {
+    background-image: url('Images/Home.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.blur-rectangle {
+    position: absolute;
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    bottom: 1cm;
+    background-color: transparent; 
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    position: absolute; top:2px;
+    font-weight: bold;
+    font-size: x-large;
+    color: aliceblue;
+}
+.images{
+    position: absolute; top: 120px;
+}
+.text{
+    position: absolute;
+    top: 540px;
+    left: 30px;
+    color: aliceblue;
+}
