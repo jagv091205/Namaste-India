@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Archives</title>
+        <style>
+            body {
+                background-image:url('background.jpg');    
+            }
+        </style>
+    </head>
+    <body>
+        Hello
+    </body>
+</html>
