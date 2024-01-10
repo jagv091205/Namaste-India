@@ -4,11 +4,11 @@
         <title>Archives</title>
         <style>
             body {
-                background-image:url('background.jpg');    
+                background-image:url('Home.jpg');    
             }
         </style>
     </head>
     <body>
-        Hello
+        
     </body>
 </html>
