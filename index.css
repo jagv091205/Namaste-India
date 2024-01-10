@@ -1,0 +1,74 @@
+
+body {
+   margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.background-img {
+    background-image: url('Images/Home.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.blur-rectangle {
+    position: absolute;
+    top: 1cm;
+    left: 1cm;
+    right: 1cm;
+    bottom: 1cm;
+    background-color: transparent; 
+    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    width: 50px; /* Adjust the logo width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 17cm;
+}
+
+.brand-text h1 {
+    margin-left: 1px;
+    margin-right: 30cm;
+   
+    color: white;
+}
+
+.navigation {
+    margin-top: 5px; /* Adjust the margin as needed */
+    margin-bottom: 35cm;
+    margin-left: 20cm;
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white; /* Adjust the color as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin: 0 10px; /* Adjust the margin between links as needed */
+    
+    
+}
+
+/* Add more styles for navigation buttons or other content as needed */
+.btn {
+    margin: 10px;
+}
+
