@@ -1,21 +1,17 @@
-
 body {
-   margin: 0;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo img{
-    height: 100px;
-}
-
-.background-img {
+.background-container {
     background-image: url('Images/Home.jpg');
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     background-size: cover;
+    overflow: auto;
+    position: relative;
 }
 
 .blur-rectangle {
@@ -24,13 +20,17 @@ body {
     left: 1cm;
     right: 1cm;
     bottom: 1cm;
-    background-color: transparent; 
-    backdrop-filter: blur(10px); /* Adjust the blur radius as needed */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
+
+/* Rest of your CSS styles */
+
 
 .top-section {
     display: flex;
@@ -41,67 +41,118 @@ body {
 }
 
 .logo img {
-    width: 50px; /* Adjust the logo width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 50px;
+    height: auto;
     margin-bottom: 17cm;
-    
 }
 
 .brand-text h1 {
-   position: absolute;
-   color: white;
-   right: 1000px;
-   top: 0.1px;
-   left: 60px;
-   bottom: 100px;
-   font-family:'Times New Roman', Times, serif;
-
+    position: absolute;
+    color: white;
+    right: 1000px;
+    top: 0.1px;
+    left: 60px;
+    bottom: 100px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .navigation {
     position: absolute;
     top: 15px;
     right: 10px;
-    
 }
 
 .navigation a {
     text-decoration: none;
-    color: white; /* Adjust the color as needed */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin: 0 10px; /* Adjust the margin between links as needed */
-    
-    
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
 }
 
-.navigation:hover{
+.navigation:hover {
     color: aqua;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: aqua;
 }
 
 .button-images {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: start;
     align-items: center;
     position: absolute;
-    top: 100px;
+    top: 200px;
     left: 20px;
     width: 50%;
 }
 
 .button-images a {
-    text-decoration:solid;
-    margin: 0 40px; /* Increased margin between images */
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 
 .button-images img {
-    width: 50%; /* Increased image size */
-    aspect-ratio: 6/5;
-    object-fit: contain;
-    gap: 100px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
 }
+
+.button-images a span {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+}
+
+.button-images a:hover img {
+    transform: translateY(-20px);
+}
+
+.button-images a:hover span {
+    bottom: 0;
+}
+
+#dyk {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    bottom: 10;
+    top: 300px;
+    right: 10px;
+    left: 995px;
+    margin-right: 10px;
+    max-width: 30%; /* Set the maximum width as needed */
+    transition: opacity 4s ease-in-out;
+}
+
+#dyk.active {
+    opacity: 1;
+}
+
+
+.center-image-button {
+   position:relative;
+   margin-top: 2000px;
+    bottom: 100px;
+    size: 10cap;
+}
+
+.center-image-button img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+
 
