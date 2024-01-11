@@ -141,17 +141,6 @@ body {
 }
 
 
-.center-image-button {
-   position:relative;
-   margin-top: 2000px;
-    bottom: 100px;
-    size: 10cap;
-}
-
-.center-image-button img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto;
-}
 
 
 
