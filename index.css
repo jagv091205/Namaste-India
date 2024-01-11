@@ -90,6 +90,7 @@ body {
     position: absolute;
     top: 100px;
     left: 20px;
+    width: 50%;
 }
 
 .button-images a {
