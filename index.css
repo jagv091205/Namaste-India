@@ -140,8 +140,140 @@ body {
     opacity: 1;
 }
 
+/* ... Your existing CSS ... */
 
+/* ... Your existing CSS ... */
 
+.explore-text {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Change text color as needed */
+}
 
+.enter-button {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.curved-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Change to your desired background color */
+    color: #000000; /* Change to your desired text color */
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
 
+.bg{
+    background-image: url('Images/banner.jpg');
+    top: 5px;
+}
+
+/* ... Your existing CSS styles ... */
+
+.about-content {
+    text-align: center;
+    margin: 20px;
+    color: #fff; /* Change text color as needed */
+}
+
+.about-content h2 {
+    font-size: 24px;
+}
+
+.about-content h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* ... Your existing CSS styles ... */
+/* ... Your existing CSS styles ... */
+
+/* ... (previous CSS code) ... */
+
+/* ... (previous CSS code) ... */
+
+.forum-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.forum-category {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.forum-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.forum-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.forum-category li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.forum-category li a {
+    text-decoration: none;
+    color: #9effff;
+    transition: color 0.3s ease;
+}
+
+.forum-category li a:hover {
+    color: #fff;
+}
+/* ... (previous CSS code) ... */
+
+.community-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.create-post-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.create-post-button button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-post-button button:hover {
+    background-color: #0056b3;
+}
+
+/* ... (remaining CSS code) ... */
+
+/* ... (remaining CSS code) ... */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

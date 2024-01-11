@@ -14,3 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setInterval(changeImage, 4000); // Change image every 4 seconds (including the 1s transition)
 });
+
