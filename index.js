@@ -1,16 +1,16 @@
-// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const image = document.getElementById('dyk');
+    const images = ['Images/fact1.jpg', 'Images/fact2.jpg', 'Images/fact3.jpg', 'Images/fact.png'];
+    let currentIndex = 0;
 
-// Include Bootstrap JS dependencies
-document.write('<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"><\/script>');
-document.write('<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"><\/script>');
+    function changeImage() {
+        image.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+        image.classList.add('active');
+        setTimeout(() => {
+            image.classList.remove('active');
+        }, 3000); // Show image for 3 seconds
+    }
 
-// Include Bootstrap JS
-document.write('<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"><\/script>');
-
-// Your custom JavaScript code
-document.addEventListener('DOMContentLoaded', function () {
-    // Your JavaScript code goes here
-    console.log('Script loaded!');
-
-    
+    setInterval(changeImage, 4000); // Change image every 4 seconds (including the 1s transition)
 });
