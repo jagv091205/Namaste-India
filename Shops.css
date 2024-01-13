@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -73,31 +72,6 @@ body {
     position: absolute;
     top: 60px;
     left: 580px;
-    color: aliceblue;
+    color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.img{
-    position: absolute;
-    left: 900px;
-    top: 150px;
-}
-.img1{
-    position: absolute;
-    left: 50px;
-    top: 150px;
-}
-.img2{
-    position: absolute;
-    left: 500px;
-    top: 150px;
-}
-.txt{
-    color: aliceblue;
-    position: absolute;
-    top: 580px;
-}
-.h1{
-    font-weight: bold;
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
 }
